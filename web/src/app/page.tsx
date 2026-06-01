@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import Header from "./header";
 import ShowcaseGallery from "./showcase";
-
-/* แถบเมนูบางๆ แบบ Apple */
-const navLinks = ["บริการ", "แพ็กเกจ", "ผลงาน", "รีวิว", "ติดต่อ"];
 
 /* รูปจาก Unsplash (อนุญาตใน next.config.ts แล้ว) */
 const img = (id: string, w = 1600) =>
@@ -181,28 +179,7 @@ export default function Home() {
   return (
     <div className="flex flex-1 flex-col bg-white text-zinc-900">
       {/* ---------- แถบเมนูบางแบบ Apple ---------- */}
-      <header className="sticky top-0 z-50 border-b border-black/[.04] bg-white/70 backdrop-blur-xl backdrop-saturate-150">
-        <nav className="mx-auto flex h-12 w-full max-w-5xl items-center justify-between px-6 text-[13px] font-normal text-zinc-700">
-          <Link href="/" className="text-base font-semibold tracking-tight text-black">
-            WebCraft
-          </Link>
-          <ul className="hidden items-center gap-9 md:flex">
-            {navLinks.map((l, i) => (
-              <li key={l}>
-                <a
-                  href={["#services", "#pricing", "#portfolio", "#reviews", "#contact"][i]}
-                  className="opacity-80 transition-opacity hover:opacity-100"
-                >
-                  {l}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <Link href="/login" className="opacity-80 transition-opacity hover:opacity-100">
-            เข้าสู่ระบบ
-          </Link>
-        </nav>
-      </header>
+      <Header />
 
       <main className="flex-1">
         {/* ---------- Hero หลัก (พื้นขาว) ---------- */}
