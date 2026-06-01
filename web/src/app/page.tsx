@@ -497,8 +497,8 @@ export default function Home() {
                 },
                 {
                   label: "LINE",
-                  value: "li.litlit",
-                  href: "https://line.me/ti/p/~li.litlit",
+                  value: "wisarut_rutt",
+                  href: "https://line.me/ti/p/~wisarut_rutt",
                   qr: "/line-qr.png",
                   badge: "bg-[#06C755] text-white",
                   icon: (
