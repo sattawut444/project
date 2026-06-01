@@ -487,8 +487,8 @@ export default function Home() {
               {[
                 {
                   label: "โทร",
-                  value: "062-417-2731",
-                  href: "tel:0624172731",
+                  value: "096-820-2695\n062-417-2731",
+                  href: "tel:096-820-2695",
                   qr: null,
                   badge: "bg-emerald-500 text-white",
                   icon: (
@@ -562,7 +562,7 @@ export default function Home() {
                     {c.label}
                   </span>
                   {c.href.startsWith("tel:") && (
-                    <span className="text-base font-semibold text-zinc-900">
+                    <span className="whitespace-pre-line text-center text-base font-semibold leading-relaxed text-zinc-900">
                       {c.value}
                     </span>
                   )}
