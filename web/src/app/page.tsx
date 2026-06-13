@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./header";
+import { LogoMark } from "./logo";
 import ShowcaseGallery from "./showcase";
 
 /* รูปจาก Unsplash (อนุญาตใน next.config.ts แล้ว) */
@@ -190,8 +191,13 @@ export default function Home() {
             className="pointer-events-none absolute inset-x-0 -top-24 mx-auto h-72 max-w-3xl rounded-full bg-gradient-to-r from-sky-200/40 via-indigo-200/40 to-violet-200/40 blur-3xl"
           />
 
-          {/* ป้ายกำกับด้านบน */}
+          {/* โลโก้มาร์ก */}
           <div className="relative flex justify-center">
+            <LogoMark className="h-16 w-16 drop-shadow-sm" />
+          </div>
+
+          {/* ป้ายกำกับด้านบน */}
+          <div className="relative mt-6 flex justify-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-black/[.08] bg-white/80 px-4 py-1.5 text-[13px] font-medium text-zinc-700 shadow-sm backdrop-blur">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
               รับทำเว็บไซต์ครบวงจร · เริ่มต้น ฿9,900
